@@ -1,0 +1,35 @@
+INITIALIZING : django-admin startproject *name*
+RUN SERVER : python manage.py runserver
+CREATE APP : python manage.py startapp *name*
+MAIN APP : 
+1.settings.py
+2.urls.py
+
+CREATED APPS :  
+1.admin.py
+2.models.py
+3.views.py
+
+MIGRATE DATABASE : python manage.py migrate
+CREATE SUPER USER : python manage.py createsuperuser
+MAKE MIGRATIONS : python manage.py makemigrations
+
+ADDING MODELS TO DATABASE : 
+GET IN PYTHON SHELL : python manage.py shell
+IMPORTING MODELS : from accounts.models import *
+CUSTOMER VARIABLE : customers = Customer.objects.all()
+FIRST CUSTOMER : customers.first()
+LAST CUSTOMER : customers.last()
+
+ORDERS_BY_CUSTOMERS1 : orders = customer1.order_set.all()
+1ST ORDER : order = Order.object.first()
+NAME OF CUSTOMER : order.objects.name
+
+DYNAMIC CUSTOMER ID : urls.py : path('customer/<str:pk_test>/',views.customer)
+CUSTOMER1 : customer = Customer.objects.all(id = pk_test)
+ORDERS OF CUSTOMER 1 : orders = customer.order_set.all()
+
+SEARCH : package : pip install django-filter
+SETTINGS.PY : INSTALLED APPS : django_filters
+
+
